@@ -32,5 +32,5 @@ var isPalindrome = function (x) {
   return reversed === x;
 };
 
-console.log(isPalindrome(1551));
+console.log(isPalindrome(151));
 console.log(isPalindrome(6969));
