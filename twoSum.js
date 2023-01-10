@@ -15,6 +15,20 @@
 }
 } */
 
-//strategy2: hash map
+//strategy2: hash map, more optimal
 
-function twoSum(nums, target) {}
+function twoSum(nums, target) {
+  const hashMap = {};
+
+  for (let i = 0; i < nums.length; i++) {
+    //pointing to current number as i is increasing
+    const currNum = nums[i];
+    const numToFind = target - currNum;
+
+    if (hashMap[numToFind] >= 0) {
+      return [hashMap[numToFind], i];
+    } else {
+      hashMap[currNum] = i;
+    }
+  }
+}
