@@ -32,3 +32,5 @@ function twoSum(nums, target) {
     }
   }
 }
+
+console.log(twoSum([1, 3, 5], 6));
