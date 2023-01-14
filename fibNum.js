@@ -4,4 +4,4 @@ function fib(n) {
 }
 
 //test
-console.log(fib(4)); //3
+console.log(fib(6)); //3
