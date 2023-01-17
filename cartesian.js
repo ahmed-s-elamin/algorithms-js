@@ -12,7 +12,7 @@ function cartesian(a, b) {
     //travesring b
     for (let j = 0; j < b.length; j++) {
       //pairing a elements with elements of b
-      res.push([a[i]], [b[j]]);
+      res.push([a[i], b[j]]);
     }
   }
   return res;
@@ -20,10 +20,4 @@ function cartesian(a, b) {
 
 const a = [1, 2];
 const b = [3, 4];
-console.log(cartesian(a, b));
-// [
-//     [ 1 ], [ 3 ],
-//     [ 1 ], [ 4 ],
-//     [ 2 ], [ 3 ],
-//     [ 2 ], [ 4 ]
-//   ]
+console.log(cartesian(a, b)); //[ [ 1, 3 ], [ 1, 4 ], [ 2, 3 ], [ 2, 4 ] ]
