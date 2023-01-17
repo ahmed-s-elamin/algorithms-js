@@ -6,9 +6,4 @@ function fib(n) {
   return fib;
 }
 
-console.log(fib(2));
-console.log(fib(3));
-console.log(fib(4));
-console.log(fib(5));
 console.log(fib(6));
-console.log(fib(7));
