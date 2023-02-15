@@ -31,5 +31,5 @@ function quickSort(arr) {
 //average o(nlogn)
 
 const arr = [2, 5, 3, 4, 1];
-quickSort(arr);
-console.log(arr);
+
+console.log(quickSort(arr));
