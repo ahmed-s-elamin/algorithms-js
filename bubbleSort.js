@@ -14,6 +14,9 @@ function bubbleSort(arr) {
     }
   } while (swapped);
 }
+
+//o(n^2)
+
 const arr = [2, 5, 3, 4, 1];
 bubbleSort(arr);
 console.log(arr);
