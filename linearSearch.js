@@ -9,4 +9,6 @@ function linearSearch(arr, target) {
   return -1;
 }
 
+//o(n)
+
 console.log(linearSearch([-5, 2, 10, 4, 6], 10)); //2
