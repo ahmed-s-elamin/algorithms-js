@@ -11,6 +11,7 @@ if t > mid, l = mid +1
 */
 
 function binarySearch(arr, target) {
+  arr.sort((a, b) => a - b);
   let l = 0;
   let r = arr.length - 1;
 
@@ -26,4 +27,5 @@ function binarySearch(arr, target) {
   return -1;
 }
 
+console.log(binarySearch([-5, 2, 10, 4, 6], 10)); //4
 console.log(binarySearch([-5, 2, 4, 6, 10], 10)); //4
