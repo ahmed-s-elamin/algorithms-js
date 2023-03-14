@@ -2,6 +2,10 @@
 // find the index of 't' in the array
 // return -1 if not found
 
+function binarySearch(arr, target) {
+  return search(arr, target, 0, arr.length - 1);
+}
+
 function search(arr, target, l, r) {
   if (l > r) return -1;
 
@@ -17,8 +21,6 @@ function search(arr, target, l, r) {
   }
 }
 
-function binarySearch(arr, target) {
-  return search(arr, target, 0, arr.length - 1);
-}
+//o(log n)
 
 console.log(binarySearch([-5, 2, 4, 6, 10], 10)); //4
