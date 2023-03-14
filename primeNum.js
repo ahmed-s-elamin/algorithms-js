@@ -6,6 +6,7 @@ function isPrime(n) {
 
   return true;
 }
+//o(n)
 
-console.log(isPrime(1));
-console.log(isPrime(5));
+console.log(isPrime(1)); //false
+console.log(isPrime(5)); //true
