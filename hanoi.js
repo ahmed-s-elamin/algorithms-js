@@ -8,11 +8,11 @@ from top of the stacks and replacing it on top of another stack
 
 function hanoi(n, fromRod, toRod, usingRod) {
   if (n === 1) {
-    console.log(`move disk 1 from ${fromRod} to ${toRod}`);
+    console.log(`move disc 1 ${fromRod} to ${toRod}`);
     return;
   }
   hanoi(n - 1, fromRod, usingRod, toRod);
-  console.log(`move disk ${n} from ${fromRod} to ${toRod}`);
+  console.log(`moved dik ${n} from ${fromRod} to ${toRod}`);
   hanoi(n - 1, usingRod, toRod, fromRod);
 }
 
