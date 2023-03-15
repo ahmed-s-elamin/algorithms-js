@@ -11,9 +11,11 @@ concatenate arrays
 
 function quickSort(arr) {
   if (arr.length < 2) return arr;
+
   let pivot = arr[arr.length - 1]; //point pivot
   let left = [];
   let right = [];
+
   //traverse arr and classify left and right arr
   for (let i = 0; i < arr.length - 1; i++) {
     //compare with pivot and push into proper arr
@@ -23,11 +25,12 @@ function quickSort(arr) {
       right.push(arr[i]);
     }
   }
+
   //recursively concatenate arrays
   return [...quickSort(left), pivot, ...quickSort(right)];
 }
 
-//worst o(n^2)
+//worst o(n^2) already sorted
 //average o(nlogn)
 
 const arr = [2, 5, 3, 4, 1];
