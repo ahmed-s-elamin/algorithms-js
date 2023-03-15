@@ -5,9 +5,7 @@ function bubbleSort(arr) {
   do {
     swapped = false;
     for (let i = 0; i < arr.length - 1; i++) {
-      let curr = arr[i];
-      let next = arr[i + 1];
-      if (curr > next) {
+      if (arr[i] > arr[i + 1]) {
         let temp = arr[i];
         arr[i] = arr[i + 1];
         arr[i + 1] = temp;
